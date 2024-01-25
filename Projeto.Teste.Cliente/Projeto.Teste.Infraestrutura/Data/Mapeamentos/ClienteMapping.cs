@@ -43,7 +43,7 @@ namespace Projeto.Teste.Infraestrutura.Data.Mapeamentos
 
             builder.Property(p => p.Fone)
                 .HasColumnName("fone")
-                .HasColumnType("varchar(9)");
+                .HasColumnType("varchar(11)");
 
             builder.Property(p => p.DataNascimento)
                 .HasColumnName("data_nascimento")
