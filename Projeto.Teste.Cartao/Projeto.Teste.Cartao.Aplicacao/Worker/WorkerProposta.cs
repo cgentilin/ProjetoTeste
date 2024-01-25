@@ -62,8 +62,8 @@ namespace Projeto.Teste.Cartao.Aplicacao.Worker
                     if (propostas.Count > 0)
                         uow.BeginTransaction();
                     else
-                        _log.LogInformation($"Worker sem propostas. Proxyma execução" + 
-                            $"em {System.DateTime.Now.AddMilliseconds(_miliSegundos)}");
+                        _log.LogInformation($"Worker não existem propostas na fila. Proxyma execução" + 
+                            $"em {System.DateTime.Now.ToLocalTime().AddMilliseconds(_miliSegundos)}");
 
                     foreach (var proposta in propostas)
                     {
