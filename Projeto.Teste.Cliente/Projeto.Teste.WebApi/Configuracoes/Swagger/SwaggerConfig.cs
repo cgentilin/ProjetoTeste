@@ -14,7 +14,7 @@ namespace Projeto.Teste.WebApi.Configuracoes.Swagger
                 {
                     Version = "v1",
                     Title = "Microserviço Contexto Cliente",
-                    Description = "API Projeto teste Charles Jardim Gentilin"
+                    Description = "API projeto teste Charles Jardim Gentilin"
                 });
 
                 c.CustomSchemaIds(x => x.FullName);
