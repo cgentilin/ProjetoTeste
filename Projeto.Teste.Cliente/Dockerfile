@@ -6,9 +6,7 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-#COPY ["Projeto.Teste.WebApi/Projeto.Teste.WebApi.csproj", "Projeto.Teste.WebApi/"]
 COPY . .
-RUN dotnet restore "Projeto.Teste.WebApi/Projeto.Teste.WebApi.csproj"
 WORKDIR "/src/Projeto.Teste.WebApi"
 RUN dotnet build "Projeto.Teste.WebApi.csproj" -c Release -o /app/build
 
