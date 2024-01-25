@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LinqKit.Core" Version="1.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Projeto.Teste.Dominio\Projeto.Teste.Dominio.csproj" />
+    <ProjectReference Include="..\Projeto.Teste.Infraestrutura\Projeto.Teste.Infraestrutura.csproj" />
+  </ItemGroup>
+
+</Project>

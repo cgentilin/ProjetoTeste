@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="LinqKit.Core" Version="1.2.5" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Projeto.Teste.Cartao.Dominio\Projeto.Teste.Cartao.Dominio.csproj" />
+    <ProjectReference Include="..\Projeto.Teste.Cartao.Infraestrutura\Projeto.Teste.Cartao.Infraestrutura.csproj" />
+  </ItemGroup>
+
+</Project>
