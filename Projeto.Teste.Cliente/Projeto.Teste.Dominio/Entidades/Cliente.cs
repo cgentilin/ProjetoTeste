@@ -18,6 +18,7 @@ namespace Projeto.Teste.Dominio.Entidades
 
         public bool Validar()
         {
+            //guard clauses to know more só da uma olhada here ;)  https://maiconheck.io/krafted/articles/guards.html
             Guard.Against
                 .NullOrWhiteSpace(Nome, "Não pode ser nulo ou branco", nameof(Nome))
                 .NotMatch(Documento, @"^\d{11}$", opt.CultureInvariant, "Informar CPF 11 dígitos somente números")
