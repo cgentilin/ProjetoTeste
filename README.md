@@ -29,7 +29,7 @@ sudo cp ./create-database-charles-mysql.sql #caminho retornado pelo comando acim
 5) Alternativa ao passo 4
 É possível abrir o código fonte no visual studio criar e rodar uma migration em ambos os projetos. Esse tutorial não descreve esse procedimento.
 
-6) Execute o script, q se foi copiado corretamente no passo 4 já está dentro do container
+6) Executar o script, q se foi copiado corretamente no passo 4 já está dentro do container
 ```bash
 docker exec charles-mysql bash -c "mysql -uroot -psegredo < create-database-charles-mysql.sql"
 ```
@@ -39,12 +39,12 @@ docker exec charles-mysql bash -c "mysql -uroot -psegredo < create-database-char
 docker build -t mscliente:latest .
 docker run -d --name mscliente -p "9090:80" --network=charles-network -e ASPNETCORE_ENVIRONMENT=Production mscliente
 ```
-8) Criar a imagem e container do microserviço cartão.
+9) Criar a imagem e container do microserviço cartão.
 ```bash
 docker build -t mscartao:latest .
 docker run -d --name mscartao -p "9095:80" --network=charles-network -e ASPNETCORE_ENVIRONMENT=Production mscartao
 ```
-9) Confirma se tudo ocorreu conforme esperado.
+10) Confirmar se tudo ocorreu conforme esperado.
 ```bash
 docker ps
 docker logs mscliente
