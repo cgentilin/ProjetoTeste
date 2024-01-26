@@ -51,4 +51,5 @@ docker logs mscliente
 docker logs mscartao
 ```
 
-![dockerps](https://github.com/cgentilin/ProjetoTeste/assets/47865895/8531efbf-d139-4c45-b145-c332aeee30ff)
+![3container-solucao-rodando](https://github.com/cgentilin/ProjetoTeste/assets/47865895/6baaeb46-7303-45e8-a42d-1afab9216fb1)
+
