@@ -7,4 +7,4 @@ O microserviço Cartão, além dos padrões de arquitetura mencionados acima, se
 
 *A solução utiliza 3 container, mas é possível ter uma visão bastante detalhada de todo sem ter que criar e executar os containers. A pasta img contém inúmeras imagens de detalhes do projeto.
 
-**A seguir um Roteiro para criar as imagens e containers e executar o projeto. Este roteiro foi validado e produzio o resultado esperado quando executado utilizando uma máquina windows com wsl2 instalado rodando ubunto 22.04.3 LTS.
+**A seguir um Roteiro para criar as imagens e containers e executar o projeto. Este roteiro foi validado e produzio o resultado esperado quando executado utilizando uma máquina windows 11 com wsl2 instalado rodando ubuntu 22.04.3 LTS.
