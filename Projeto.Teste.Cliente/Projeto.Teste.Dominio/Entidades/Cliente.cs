@@ -21,8 +21,8 @@ namespace Projeto.Teste.Dominio.Entidades
             //guard clauses to know more só da uma olhada here ;)  https://maiconheck.io/krafted/articles/guards.html
             Guard.Against
                 .NullOrWhiteSpace(Nome, "Não pode ser nulo ou branco", nameof(Nome))
-                .NotMatch(Documento, @"^\d{11}$", opt.CultureInvariant, "Informar CPF 11 dígitos somente números")
-                .NotMatch(Fone, @"^\d{11}$", opt.CultureInvariant, "Informa Telefone com apenas números 11 dígitos DD + Número");
+                .NullOrWhiteSpace(Email, "Não pode ser nulo ou branco", nameof(Email))
+                .NotMatch(Documento, @"^\d{11}$", opt.CultureInvariant, "Informar CPF 11 dígitos somente números");
 
             return true;
         }

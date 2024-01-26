@@ -20,7 +20,7 @@ namespace Projeto.Teste.Aplicacao.Handlers
         {
             try
             {
-                Cliente categoria = new Cliente() 
+                Cliente cliente = new Cliente() 
                 { 
                     Nome = command.Nome,
                     Email = command.Email,
@@ -29,10 +29,11 @@ namespace Projeto.Teste.Aplicacao.Handlers
                     DataNascimento = command.DataNascimento,
                     Fone = command.Fone
                 };
+                cliente.Validar();
 
                 _uow.BeginTransaction();
 
-                var clienteCriado = await _repocliente.CreateAsync(categoria);
+                var clienteCriado = await _repocliente.CreateAsync(cliente);
 
                 var result = await _uow.SaveChangesAsync();
                 
