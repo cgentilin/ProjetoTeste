@@ -1,16 +1,16 @@
 ﻿using Projeto.Teste.Cartao.Dominio.Entidades;
 using Projeto.Teste.Cartao.Dominio.Enum;
-using NSubstitute;
-using Projeto.Teste.Cartao.Infraestrutura.Data.Repositorios;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.Drawing;
 
 namespace Projeto.Teste.Cartao.Testes.Dominio
 {
     public class TesteUnitarioProposta
     {
-        // Cada teste deve ser escrito no seu respectivo namespace por questão de organização.
-        // Neste aqui ficam os de dominio
+        //Exemplo de Testes Unitários, muitos outros poderiam ser realizados inclusive testes mocados "Mock"
+        //para validar regras de negócio mais complexas e até mesmo persistir dados em memória para
+        //validar a camada de persistência. Contudo por absoluta sobrecarga de trabalho nesta semana em especial
+        //não pude implementá-los nesta oportunidade.
+
+        //Aqui foram realizados testes de duas regras de negócio do dominio renda mínima e aprovar proposta.
 
         [Theory(DisplayName = "Renda mínima insuficiente")]
         [InlineData("Charles", "65149427", "1973-12-14", 1000, 800, enuSituacaoProposta.AguardandoAnalise)]
