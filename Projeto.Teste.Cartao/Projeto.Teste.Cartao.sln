@@ -5,11 +5,13 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.Teste.Cartao", "Projeto.Teste.Cartao\Projeto.Teste.Cartao.csproj", "{6008AA88-DE47-4B99-B8FB-FF010854A30C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.Teste.Cartao.Aplicacao", "Projeto.Teste.Cartao.Aplicacao\Projeto.Teste.Cartao.Aplicacao.csproj", "{E0F6678E-B145-439F-85B3-C047B4622F8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.Teste.Cartao.Aplicacao", "Projeto.Teste.Cartao.Aplicacao\Projeto.Teste.Cartao.Aplicacao.csproj", "{E0F6678E-B145-439F-85B3-C047B4622F8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.Teste.Cartao.Dominio", "Projeto.Teste.Cartao.Dominio\Projeto.Teste.Cartao.Dominio.csproj", "{DA56C3D3-89DB-43BF-84D5-E99F12467FB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.Teste.Cartao.Dominio", "Projeto.Teste.Cartao.Dominio\Projeto.Teste.Cartao.Dominio.csproj", "{DA56C3D3-89DB-43BF-84D5-E99F12467FB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.Teste.Cartao.Infraestrutura", "Projeto.Teste.Cartao.Infraestrutura\Projeto.Teste.Cartao.Infraestrutura.csproj", "{9CF6365F-BD41-4966-B379-C0F8CF9253CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projeto.Teste.Cartao.Infraestrutura", "Projeto.Teste.Cartao.Infraestrutura\Projeto.Teste.Cartao.Infraestrutura.csproj", "{9CF6365F-BD41-4966-B379-C0F8CF9253CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.Teste.Cartao.Testes", "Projeto.Teste.Cartao.Testes\Projeto.Teste.Cartao.Testes.csproj", "{58ECF5E0-C4A3-4FBC-8EDA-22D6300C8DA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9CF6365F-BD41-4966-B379-C0F8CF9253CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CF6365F-BD41-4966-B379-C0F8CF9253CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CF6365F-BD41-4966-B379-C0F8CF9253CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58ECF5E0-C4A3-4FBC-8EDA-22D6300C8DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58ECF5E0-C4A3-4FBC-8EDA-22D6300C8DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58ECF5E0-C4A3-4FBC-8EDA-22D6300C8DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58ECF5E0-C4A3-4FBC-8EDA-22D6300C8DA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
