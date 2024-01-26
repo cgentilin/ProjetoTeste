@@ -1,5 +1,5 @@
 # ProjetoTeste
-Contém 2 microserviços que seguem o mesmo princído de design de software o DDD, Contudo os padrões de arquitetura de software não são os mesmos. 
+Contém 2 microserviços que seguem o mesmo princído de design de software, o DDD, Contudo os padrões de arquitetura não são os mesmos. 
 
 O microserviço de cliente segue o o padrão arquiterural [Explicit Dependencies](https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles) Uma abordagem mais objetiva e clara do relacionamento e dependências entre as clases, que não esconde nada dos desenvolvedores. Digamos ser esta também uma implementação que segue a risca o conceito (KISS)[https://uxdesign.blog.br/a-origem-do-keep-it-simple-stupid-kiss-b24085dc1327], contudo não é uma implementação pobre, foram aplicados os padrões de IOC, DI, CQRS, OOP, Unit Of Work, Repositories Pattern e [Guard Clauses](https://maiconheck.io/krafted/articles/guards.html) e testes utilizando xUnit.
 
