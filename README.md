@@ -5,4 +5,4 @@ O microserviço de cliente segue o o padrão arquiterural [Explicit Dependencies
 
 O microserviço Cartao, além dos padrões de arquitetura mencionados acima, segue outros mais complexos e sofisticados como o [MEdiator](https://medium.com/tableless/mediatr-com-asp-net-core-7b98ba0ca640) resultando em um código com alto nível de desacoplamento, aliás essa a principal vantagem da utilização do padrão, onde o termo acoplamento está relacionado diretamente a custo. O conceito de behaviors é aplicado para validar as requisições utilizando o Fluent Validation.
 
-**Roteiro para criar as imagens é containers e rodas o projeto. Confirma na Wiki informações e imagens do projeto, aliás a pasta img comtém muitas imagens do projeto incluindo imagens de teste de endpoints.
+**A seguir Roteiro para criar as imagens e containers e executar o projeto. Confira também na Wiki informações e imagens do projeto, aliás a pasta img comtém muitas imagens do projeto.
