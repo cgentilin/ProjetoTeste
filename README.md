@@ -10,39 +10,42 @@ O microserviço Cartão, além dos padrões de arquitetura mencionados acima, se
 **A seguir um Roteiro para criar as imagens e containers e executar o projeto. Este roteiro foi validado e produzio o resultado esperado quando executado utilizando uma máquina windows 11 com wsl2 instalado rodando ubuntu 22.04.3 LTS.
 
 1) Criar uma rede docker
-``` bash
+```bash
 docker network create charles-network
 ```
 2) Criar um volume para o mysql
-``` bash
+```bash
 docker volume create volume-mysql
 ```
 3) Criar o container com Mysql, mantnha a porta mapeada e a rede
+```bash
 docker run -d --name charles-mysql -p "3306:3306" --network=charles-network -w "/usr/src/script" -v "volume-mysql:/usr/src/script" -e MYSQL_ROOT_PASSWORD=segredo mysql
-
-4) Copiar o script da pasta scripsts do repositório para o volume criado no item 2.
-``` bash
+```
+5) Copiar o script da pasta scripsts do repositório para o volume criado no item 2.
+```bash
 docker volume inspect volume-mysql  #esse comando mostra o caminho físico da pasta
-sudo cp ./create-database-charles-mysql.sql caminho #retornado pelo comando acima. Existem outras formas, mas o script precisa estar na pasta de volume
+sudo cp ./create-database-charles-mysql.sql #caminho retornado pelo comando acima. Existem outras formas, mas o script precisa estar na pasta de volume
 ```
 5) Alternativa ao passo 4
 É possível abrir o código fonte no visual studio criar e rodar uma migration em ambos os projetos. Esse tutorial não descreve esse procedimento.
 
 6) Execute o script, q se foi copiado corretamente no passo 4 já está dentro do container
+```bash
 docker exec charles-mysql bash -c "mysql -uroot -psegredo < create-database-charles-mysql.sql"
+```
 
-7) Criar a imagem e container do microserviço cliente na mesma rede do container mysql
-``` bash
+8) Criar a imagem e container do microserviço cliente na mesma rede do container mysql
+```bash
 docker build -t mscliente:latest .
 docker run -d --name mscliente -p "9090:80" --network=charles-network -e ASPNETCORE_ENVIRONMENT=Production mscliente
 ```
 8) Criar a imagem e container do microserviço cartão.
-``` bash
+```bash
 docker build -t mscartao:latest .
 docker run -d --name mscartao -p "9095:80" --network=charles-network -e ASPNETCORE_ENVIRONMENT=Production mscartao
 ```
 9) Confirma se tudo ocorreu conforme esperado.
-``` bash
+```bash
 docker ps
 docker logs mscliente
 docker logs mscartao
